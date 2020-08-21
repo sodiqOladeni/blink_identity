@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/signupFragment">
+
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="io.blusalt.simreg.presentation.ftue.SignupFragment"
+        android:label="signup_fragment"
+        tools:layout="@layout/signup_fragment" >
+        <action
+            android:id="@+id/to_identityCaptureFragment"
+            app:destination="@id/identityCaptureFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/to_homeIdentityListFragment"
+            app:destination="@id/homeIdentityListFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/identityCaptureFragment"
+        android:name="io.blusalt.simreg.presentation.identity.IdentityCaptureFragment"
+        android:label="identity_capture_fragment"
+        tools:layout="@layout/identity_capture_fragment" >
+        <action
+            android:id="@+id/to_homeIdentityListFragment"
+            app:destination="@id/homeIdentityListFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeIdentityListFragment"
+        android:name="io.blusalt.simreg.presentation.home.HomeIdentityListFragment"
+        android:label="home_identity_list_fragment"
+        tools:layout="@layout/home_identity_list_fragment" />
+</navigation>

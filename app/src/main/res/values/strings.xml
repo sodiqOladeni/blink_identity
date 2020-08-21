@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Blink Identity</string>
+    <string name="invalid_identity">Invalid Identity</string>
+    <string name="error_saving_user_identity">Error saving user identity.</string>
+    <string name="capture">Capture</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="next">Next</string>
+    <string name="first_name">First Name</string>
+    <string name="nationality">Nationality</string>
+    <string name="last_name">Last Name</string>
+    <string name="dob">Date of Birth</string>
+    <string name="exp_date">Expiring Date</string>
+    <string name="kindly_scan_document">Kindly scan your identity document to be able to capture all your information.</string>
+    <string name="scan">Scan</string>
+    <string name="invalid_email">Invalid email</string>
+    <string name="invalid_password">Invalid password</string>
+    <string name="upload_identity">Upload Identity</string>
+    <string name="login">Login</string>
+    <string name="signup">Create Account</string>
+</resources>
